@@ -1,0 +1,17 @@
+
+<!-- Lien fichier css -->
+<link rel="stylesheet" href="task-form.component.css">
+<!-- Formulaire création tâche-->
+<form class="form" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="taskName">Nom de la tâche </label>
+    <input
+      type="text"
+      class="form-control"
+      id="taskName"
+      formControlName="taskName"
+      placeholder="Nom de la tache"
+    >
+  </div>
+  <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
